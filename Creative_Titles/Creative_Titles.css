@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+  margin: 60px 30px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+h3 {
+  width: 250px;
+  padding: 20px 0px;
+  border-bottom: 2px solid;
+  position: relative;
+}
+
+.one {
+  color: #2c6ccf;
+}
+
+.two {
+  color: #cf2c5b;
+}
+
+.three {
+  color: #319e0f;
+}
+
+.four {
+  color: #ce705b;
+}
+
+h3::before {
+content: "";
+width: 125px;
+border-bottom: 2px solid #d2d2d2;
+position: absolute;
+top: 100%;
+left: 50%;
+}
+
+.circle h3::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 7px solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: calc(100% - 6px);
+  left: 0px;
+}
+
+.box h3::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 7px solid;
+  position: absolute;
+  top: calc(100% - 6px);
+  left: 0px;
+}
+
+.triangle-up h3::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 10px solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: absolute;
+  top: calc(100% - 18px);
+  left: -2px;
+}
+
+.triangle-down h3::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border: 10px solid;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: absolute;
+  top: 100%;
+  left: -2px;
+}
