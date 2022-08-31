@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+span {
+  width: 250px;
+  height: 100px;
+  background-color: #fe0204;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: 200px auto;
+  position: relative;
+}
+
+span::before {
+  content: "this is toolip content";
+  box-sizing: border-box;
+  width: 400px;
+  height: 60px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  background-color: black;
+  position: absolute;
+  top: -90px;
+  opacity: 0;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+span::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: -30px;
+  border: 20px solid black;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom: transparent;
+  opacity: 0;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+span:hover:before,
+span:hover::after {
+  opacity: 1;
+}
