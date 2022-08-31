@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  width: 80%;
+  height: 400px;
+  margin: 50px auto;
+  background-color: #eee;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 5px 1fr;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+div.username {
+  grid-area: 1/1/3/2;
+}
+div.password {
+  grid-area: 3/1/5/2;
+}
+div.email {
+  grid-area: 5/1/7/2;
+}
+div.phone {
+  grid-area: 1/3/3/4;
+}
+div.brieft {
+  grid-area: 3/3/7/4;
+}
+div.save-reset {
+  grid-area: 7/1/9/4;
+}
+
+form div {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+label {
+  width: 100%;
+  font-size: 20px;
+}
+
+span#required {
+  color: red;
+  font-weight: bold;
+}
+
+input:not([type="submit"],[type="reset"]) {
+  width: 100%;
+  font-size: 13px;
+  padding: 10px;
+  border: 0;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+label[for="brieft"] {
+  width: 100%;
+  font-size: 20px;
+  position: absolute;
+  height: 25%;
+  bottom: 75%;
+}
+
+textarea {
+  position: absolute;
+  box-sizing: border-box;
+  resize: none;
+  width: 100%;
+  height: calc(75% - 5px);
+  top: calc(25% - 7px);
+  font-size: 13px;
+  padding: 10px;
+  border: 0;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+div.submit-reset {
+  width: 100%;
+  display: flex;
+}
+
+[type="submit"],
+[type="reset"] {
+  width: 100%;
+  font-size: 13px;
+  padding: 10px;
+  border: 0;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin-bottom: 5px;
+  background-color: #009688;
+  color: white;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Two_Columns_Form/Two_Columns_Form.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <div class="username">
+      <label for="name">username <span id="required">*</span></label>
+      <input type="text"
+        id="name"
+        name="name"
+        required
+        placeholder=" type your name in english only">
+    </div>
+    <div class="password">
+      <label for="passweord">passowed <span id="required">*</span></label>
+      <input type="password" 
+        name="password"
+        id="password"
+        required
+        placeholder=" type a complex password">
+    </div>
+    <div class="email">
+      <label for="email">email <span id="required">*</span></label>
+      <input type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="type a valid email">
+    </div>
+    <div class="phone">
+      <label for="phone">phone</label>
+      <input type="tel"
+        id="phone"
+        name="phone">
+    </div>
+    <div class="brieft">
+      <label for="brieft">brieft</label>
+      <textarea name="brieft" id="brieft"></textarea>
+    </div>
+    <div class="save-reset">
+      <input type="submit" value="reset">
+      <input type="reset" value="submit">
+    </div>
+  </form>
+</body>
+</html>
