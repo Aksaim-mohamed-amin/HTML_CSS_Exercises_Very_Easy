@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 200px auto;
+  border: 5px solid #eee;
+  padding: 5px;
+}
+
+h2 {
+  width: fit-content;
+  padding: 10px 20px;
+  color: white;
+  background-color: #316978;
+  align-self: flex-start;
+  margin: 0 0 30px 0;
+}
+
+div.products {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product {
+  border: 5px solid #eee;
+  width: calc((100% - 10%) / 4);
+  margin-left: calc(10% / 3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product div:first-child {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  width: 100%;
+  height: 15%;
+  font-size: 35px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price.normal {
+  width: 100%;
+  height: 15%;
+  color: #346f7f;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.price.normal::before{
+  content: "";
+  box-sizing: border-box;
+  width: 25%;
+  height: 2px;
+  border-top: 2px solid #eee;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.price.normal::after{
+  content: "";
+  box-sizing: border-box;
+  width: 25%;
+  height: 2px;
+  border-top: 2px solid #eee;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.price.discount {
+  width: 100%;
+  height: 15%;
+  color: #346f7f;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.price.discount::before{
+  content: "";
+  box-sizing: border-box;
+  width: 15%;
+  height: 2px;
+  border-top: 2px solid #eee;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.price.discount::after{
+  content: "";
+  box-sizing: border-box;
+  width: 15%;
+  height: 2px;
+  border-top: 2px solid #eee;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+
+span.old-price {
+  text-decoration: line-through;
+  color: red;
+}
